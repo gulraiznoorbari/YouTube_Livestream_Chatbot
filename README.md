@@ -13,8 +13,8 @@ The bot replies to live chat messages in a Live Stream (obviously :p). It curren
 5. Then Copy & Paste the following commands in your terminal:
 
 ```
-git clone https://github.com/gulraiznoorbari/YouTube_ChatBot_python.git
-cd YouTube_ChatBot_python
+git clone https://github.com/gulraiznoorbari/YouTube_Live_Stream_Chat_Bot.git
+cd YouTube_Live_Stream_Chat_Bot
 python bot.py
 ```
 
