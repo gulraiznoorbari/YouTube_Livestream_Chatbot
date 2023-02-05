@@ -1,7 +1,7 @@
-<div align="center">
-  <h1>YouTube Chat Bot</h1>
-  <h3>This chat bot was developed using YouTube Data & Live Streaming API v3.</h3>
-</div>
+# YouTube Live Stream Chat Bot
+### This Chat Bot was developed using YouTube Data & Live Streaming API v3 in Python
+
+The bot replies to live chat messages in a Live Stream (obviously :p). It currently has a limited set of commands but you can easily add more.
 
 ## ⬇️ How to setup
 
