@@ -10,6 +10,10 @@ credentials = authResponse.credentials
 # Building the youtube object:
 youtube = build('youtube', 'v3', credentials=credentials)
 
+# Settings
+_delay = 1
+
+
 
 def getLiveChatId(LIVE_STREAM_ID):
     """
@@ -79,7 +83,7 @@ def main():
     liveChatId = getLiveChatId(LIVE_STREAM_ID)
     messagesList = []  # List of messages
 
-    while (True):
+    while True:
         # bot replies to every message within past 1 second (can be changed to add delay):
         time.sleep(1)
 
@@ -95,7 +99,7 @@ def main():
         allMessages = response['items']
 
         # Check if there are any new messages and add them messagesList/notReadMessages list:
-        if (len(messagesList) == 0) and len(allMessages) > 0:
+        if len(messagesList) >= 0:
             for messages in allMessages:
                 userId = messages['snippet']['authorChannelId']
                 message = messages['snippet']['textMessageDetails']['messageText']
@@ -114,7 +118,7 @@ def main():
             userId = message[0]
             message = message[1]
             userName = getUserName(userId)
-            print("\nUsername: ", userName)
+            print(f'\nUsername: {userName}')
 
             if (message == "Hello" or message == "hello" or message == "Hi" or message == "hi"):
                 sendReplyToLiveChat(
@@ -139,7 +143,7 @@ def main():
                     "Why don't skeletons ever go trick or treating? Because they have no body to go with!",
                     "What's brown and sticky? A stick!"]
                 joke = random.choice(dad_jokes)
-                sendReplyToLiveChat(liveChatId, f'{joke}')
+                sendReplyToLiveChat(liveChatId, joke)
 
 
 if __name__ == "__main__":
