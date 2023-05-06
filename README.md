@@ -1,4 +1,4 @@
-# YouTube Live Stream Chat Bot
+# YouTube Live Stream Chatbot
 
 ### This Chat Bot was developed using YouTube Data & Live Streaming API v3 in Python
 
