@@ -10,7 +10,7 @@ The bot replies to live chat messages in a Live Stream (obviously :p). It curren
 
 2. Enable YouTube Data API v3
 3. Then from the Credentials tab, create a new OAuth Client ID and select the Web Application option.
-4. Copy the Client ID and Client Secret and paste them in a `.env` file.
+4. Create a `.env` file in your project directory and copy/paste the Client ID and Client Secret in the file.
 5. Then Copy & Paste the following commands in your terminal:
 
 ```
