@@ -9,7 +9,7 @@ The bot replies to live chat messages in a Live Stream (obviously :p). It curren
 1. Goto [Google Developers Console](https://console.developers.google.com/) and create a new project.
 
 2. Enable YouTube Data API v3
-3. Then from the Credentials tab, create a new OAuth Client ID and select the Web Application option.
+3. Then from the Credentials tab, create a new OAuth Client ID and select the Web Application option. In the "Authorized redirect URIs" section, add the redirect URI you want to use. In the case of this project you will type "http://localhost:5500/" (you can use any port but I am specifically using 5500 as I have declared that as my auth uri in the auth.py script) and click Save.
 4. Create a `.env` file in your project directory and copy/paste the Client ID and Client Secret in the file.
 5. Then Copy & Paste the following commands in your terminal:
 
